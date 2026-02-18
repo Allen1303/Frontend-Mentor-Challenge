@@ -1,0 +1,152 @@
+/* CSS Variables */
+:root {
+  --light-green: hsl(148, 38%, 91%);
+  --main-green: hsl(169, 82%, 35%);
+  --medium-green: hsl(169, 82%, 27%);
+  --red: hsl(8, 66%, 54%);
+  /* Neutral */
+  --white-color: hsl(0, 0%, 100%);
+  --medium-grey: hsl(186, 15%, 40%);
+  --darker-grey: hsl(187, 24%, 22%);
+  /* Body Font size*/
+  --label-font-size: (16px);
+  --main-font: "karla";
+}
+/* Global Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--light-green);
+  padding: 1.25rem;
+}
+h1 {
+  margin-bottom: 24px;
+}
+.query-section p {
+  color: var(--medium-grey);
+  margin-bottom: 24px;
+}
+label {
+  color: var(--medium-grey);
+}
+/* Main area styling */
+main {
+  background-color: var(--white-color);
+  padding: 2.5rem;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 43.75rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+/* form Container Styling */
+.form-container {
+  display: flex;
+  gap: 1rem;
+}
+.form-container .form-group {
+  flex: 1;
+}
+.form-group {
+  display: flex;
+  flex-direction: column; /* Makes elements line-up side by side */
+  gap: 1rem;
+  margin-bottom: 24px;
+}
+/* Query Section Styling */
+.query-section {
+  font-size: var(--label-font-size);
+  margin-bottom: 12px;
+  color: #2b423f;
+}
+.radio-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 24px;
+}
+.radio-card {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--medium-grey);
+  padding: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+.radio-card input[type="radio"] {
+  accent-color: var(--medium-green);
+  margin-right: 12px;
+  width: 18px;
+  height: 18px;
+}
+.radio-card:has(input:checked) {
+  border-color: var(--medium-green);
+}
+/* Input & Textarea Styling */
+input[type="text"],
+input[type="email"] {
+  padding: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid var(--medium-grey);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+input:focus,
+textarea:focus {
+  border-color: var(--medium-green);
+}
+/* Text Area Styling */
+textarea {
+  height: 100px;
+  resize: none;
+}
+.consent-group {
+  margin-bottom: 2rem;
+}
+.consent-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.consent-group input {
+  accent-color: var(--medium-green);
+  width: 18px;
+  height: 18px;
+}
+/* Submit Button Styling */
+button {
+  background-color: var(--medium-green);
+  color: var(--white-color);
+  border: none;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: var(--label-font-size);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: var(--main-green);
+  /* color: var(--medium-green); */
+}
+span {
+  color: var(--red);
+}

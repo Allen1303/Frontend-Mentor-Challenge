@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1 class="h1-text">Contact Us</h1>
+      </div>
+
+      <form id="contact-form" method="POST">
+        <div class="form-container">
+          <div class="form-group">
+            <label for="first-name">First Name <span>*</span></label>
+            <input type="text" id="first-name" name="first-name" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name <span>*</span></label>
+            <input type="text" id="last-name" name="last-name" required />
+          </div>
+        </div>
+        <div>
+          <div class="form-group">
+            <label for="email">Email Address <span>*</span></label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div class="query-section">
+          <p>Query Type <span>*</span></p>
+
+          <div class="radio-group">
+            <label for="general-btn" class="radio-card">
+              <input
+                type="radio"
+                id="general-btn"
+                name="query-type"
+                value="general"
+              />
+              General Enquiry
+            </label>
+            <label for="support-btn" class="radio-card">
+              <input
+                type="radio"
+                id="support-btn"
+                name="query-type"
+                value="support"
+              />
+              Support Request
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span>*</span></label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <div class="consent-group">
+          <label for="consent-check">
+            <input type="checkbox" id="concent-check" />I consent to being
+            contacted by the team
+            <span>*</span>
+          </label>
+        </div>
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
