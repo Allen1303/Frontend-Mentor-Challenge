@@ -25,8 +25,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Project Screenshot](./screenshot.png)
-<img src="./form.png" alt="Contact Form Screenshot" width="600">
+![Project Screenshot](./form.png)
+
+<!-- <img src="./form.png" alt="Contact Form Screenshot" width="600"> -->
 
 ## My process
 
