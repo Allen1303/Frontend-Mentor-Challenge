@@ -5,11 +5,11 @@ This is a solution to the [Contact Form challenge on Frontend Mentor](https://ww
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
+- [The challenge](#the-challenge)
+- [Screenshot](#screenshot)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [Key Concepts](#key-concepts)
+- [Built with](#built-with)
+- [Key Concepts](#key-concepts)
 - [Author](#author)
 
 ## Overview
