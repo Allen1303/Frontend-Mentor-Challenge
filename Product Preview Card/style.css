@@ -1,0 +1,163 @@
+/* CSS Variables */
+:root {
+  /* Priamry Colors */
+  --green-500: hsl(158, 36%, 37%);
+  --green-700: hsl(158, 42%, 18%);
+  /* Neutral Colors */
+  --black: hsl(212, 21%, 14%);
+  --grey: hsl(228, 12%, 48%);
+  --cream: hsl(30, 38%, 92%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography Fonts */
+  --fs-base: 0.875rem;
+  --ff-body: "Montserrat", sans-serif;
+  --ff-h1: "Fraunces", serif;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+body {
+  line-height: 1.1;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--ff-body);
+  background-color: var(--cream);
+}
+main {
+  height: 100vh;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Porduct Image styling */
+.product-image img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.product {
+  margin: 1.5rem;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  /* overflow: hidden; */
+  border-radius: 0.5rem;
+}
+.product-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  font-size: var(--fs-base);
+  font-family: var(--ff-body);
+  color: var(--grey);
+}
+.product-category {
+  letter-spacing: 5px;
+  color: var(--grey);
+  text-transform: uppercase;
+}
+.product-title {
+  font-size: 2.2rem;
+  color: var(--black);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-h1);
+}
+.product-content p {
+  color: var(--grey);
+}
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.price-section .current-price {
+  color: var(--green-500);
+  font-weight: var(--fw-bold);
+  font-family: var(--ff-h1);
+  font-size: 2rem;
+}
+.add-to-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 1rem;
+  color: var(--white);
+  font-weight: var(--fw-bold);
+  background-color: var(--green-500);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+/* Desktop Styling */
+@media (min-width: 600px) {
+  .product {
+    flex-direction: row;
+  }
+  .product-image {
+    flex: 1; /* takes up left half */
+  }
+  .product-image img {
+    height: 100%; /* why: image needs to fill the card height */
+    object-fit: cover; /* why: prevents image stretching */
+  }
+  .product-content {
+    flex: 1; /* takes up right half */
+  }
+}
