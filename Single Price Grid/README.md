@@ -19,8 +19,8 @@ Users should be able to:
 
 ## My Solution
 
-- **Live Site:** [Add your live site URL here]
-- **Repository:** [Add your repository URL here]
+- **Live Site:** [https://allen1303.github.io/Single-Price-Grid-component/]
+- **Repository:** [https://github.com/Allen1303/Frontend-Mentor-Challenge/tree/main/Single%20Price%20Grid]
 
 ---
 
@@ -122,8 +122,8 @@ Writing base styles for mobile (single column) and using `min-width` media queri
 
 ## Author
 
-- Frontend Mentor — [@your-username](https://www.frontendmentor.io/profile/your-username)
-- GitHub — [@your-username](https://github.com/your-username)
+- Frontend Mentor — [@your-username](https://www.frontendmentor.io/profile/Allen1303)
+- GitHub — [https://github.com/Allen1303/Frontend-Mentor-Challenge)
 
 ---
 
